@@ -1,0 +1,216 @@
+* {
+    /* 定义主题色 */
+    --red: #333;
+    --title-color: #2980b9;
+    --hov-color: #6ec736;
+    --card-color: rgba(255, 255, 255, 0.608);
+    --my-name-color: #2e2929;
+    --no-color: #fcf8f800;
+
+}
+
+html,
+body {
+    font-family: fangsong;
+    height: 100%;
+}
+
+body {
+    background-image: url("../img/bgimg/bg-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+a {
+    color: var(--my-name-color);
+    text-decoration: none;
+}
+
+
+.title {
+    color: var(--title-color);
+    font-size: 30px;
+    font-weight: 500px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card {
+    background-color: var(--card-color);
+}
+
+
+/* ************************************* */
+.top .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+
+/* ************************************* */
+
+
+.Lowest {
+    padding: 10px 9%;
+    display: flex;
+}
+
+/* ************* left ************************ */
+
+.left {
+    /* width: 411px; */
+    height: 350px;
+    /* margin: 0 auto; */
+    margin: 20px;
+    padding: 20px 30px;
+    /* sticky表示粘性定位
+    相对于具有滚动行为的父元素 
+    top:10px 表示当元素距离那个具有滚动行为的父元素（body)位10px的时候 粘住*/
+    position: sticky;
+    top: 30px;
+}
+
+.left img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+.left .share i {
+    text-align: center;
+    color: var(--title-color);
+}
+
+.left .title {
+    color: var(--my-name-color);
+    margin-top: 0%;
+    margin-bottom: 10px;
+}
+
+/* ************* right ************************ */
+
+.right {
+    flex: 1 1 1200px;
+    padding: 20px 30px;
+    margin: 20px;
+}
+
+.right .box-container {
+    background-color: var(--card-color);
+}
+
+/* .self-introduction .box-container{
+    background-color: var(--card-color);
+} */
+
+.self-info .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.self-info .box-container .box {
+    flex: 1 1 125px;
+}
+
+.self-info span {
+    color: var(--title-color);
+}
+
+.education img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+.education .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 874.2px;
+    height: 356.8px;
+    overflow-y: auto;
+}
+
+.education .box-container .box {
+    flex: 1 1 125px;
+    text-align: center;
+}
+
+.education .box-container .box div:hover {
+    color: var(--hov-color);
+}
+
+.education img:hover {
+    border: 2px solid var(--hov-color);
+}
+
+.experience .box-container {
+    background-color: var(--no-color);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.experience .box-container .box {
+    flex: 1 1 125px;
+    text-align: center;
+    background-color: var(--card-color);
+}
+
+.experience .box-container .box .title {
+    font-size: 20px;
+}
+
+.experience .box-container .box .time {
+    font-size: 12px;
+    color: var(--title-color);
+}
+
+.experience .box-container .box .tings {
+    font-size: 15px;
+    color: var(--my-name-color);
+}
+
+.experience .box-container .box a:hover {
+    color: var(--hov-color)
+}
+
+.experience .box-container .box ul {
+    text-align: left;
+}
+
+.adress-info .bottom p {
+    font-size: 20px;
+    text-align: center;
+    color: red;
+
+}
+
+.adress-info .bottom {
+    background-color: var(--title-color);
+}
+
+.adress-info .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.adress-info .box-container .box {
+    flex: 1 1 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.adress-info .box-container .box img {
+    width: 210px;
+    height: 220px;
+}
